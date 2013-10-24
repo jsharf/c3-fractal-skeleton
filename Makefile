@@ -1,4 +1,4 @@
-all: objs/Fractal.o Buddhabrot.o Mandelbrot.o fractalgen.o lodepng.o
+all: Fractal.o Buddhabrot.o Mandelbrot.o fractalgen.o lodepng.o
 	g++ -fopenmp -g -o fractalgen Fractal.o Buddhabrot.o Mandelbrot.o fractalgen.o lodepng.o -ansi -pedantic -Wall -Wextra -O3
 
 Fractal.o: src/Fractal.cpp
