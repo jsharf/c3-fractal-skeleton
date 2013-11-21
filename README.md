@@ -2,6 +2,9 @@ Hello!
 
 This is lab 1 of the UCLA IEEE C3 program.
 
+**NOTE:** Now that the due date for lab 1 has passed, I have uploaded my own
+personal solution.
+
 Make commands:
   
     Make all
