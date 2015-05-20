@@ -41,7 +41,7 @@ void Mandelbrot::gen_fractal()
         double a = (((double)array_x)/width)*3.0-2.25;
         double b = (((double)array_y)/height)*3.0-1.5;
 
-#pragma omp parallel for reduction(+ : iter_avg)
+        #pragma omp parallel for reduction(+ : iter_avg)
         for (int k = 0; k<SUBSAMPLING; k++)
         {
             double u = (len_pix_x/SUBSAMPLING)*(rand()%SUBSAMPLING);
